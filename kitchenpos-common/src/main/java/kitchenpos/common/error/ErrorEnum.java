@@ -8,6 +8,7 @@ public enum ErrorEnum {
     ORDER_TABLE_NOT_FOUND("주문 테이블을 찾을 수 없습니다."),
     PRODUCT_NOT_FOUND("상품을 찾을 수 없습니다."),
     ORDER_TABLE_IS_EMPTY("주문 테이블이 비어있습니다."),
+    ORDER_TABLE_IS_NOT_EMPTY("주문 테이블이 비어있지 않습니다."),
     ORDER_LINE_ITEMS_IS_EMPTY("주문 항목이 비어있습니다."),
     ALREADY_GROUP("이미 단체그룹으로 지정되어 있습니다."),
     NOT_PAYMENT_ORDER("계산 완료된 주문이 아닙니다."),
