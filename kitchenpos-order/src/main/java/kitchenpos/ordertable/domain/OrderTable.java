@@ -31,19 +31,19 @@ public class OrderTable {
         this.empty = empty;
     }
 
-    public OrderTable(Long id, NumberOfGuests numberOfGuests, boolean empty) {
-        this.id = id;
+    public void updateNumberOfGuest(NumberOfGuests numberOfGuests) {
+        validateShouldNotEmpty();
         this.numberOfGuests = numberOfGuests;
-        this.empty = empty;
     }
 
     public static OrderTable of(Long id, Long tableGroupId, int numberOfGuests, boolean empty) {
         return new OrderTable(id, tableGroupId, numberOfGuests, empty);
     }
 
-    public void updateNumberOfGuest(NumberOfGuests numberOfGuests) {
-        validateShouldNotEmpty();
+    public OrderTable(Long id, NumberOfGuests numberOfGuests, boolean empty) {
+        this.id = id;
         this.numberOfGuests = numberOfGuests;
+        this.empty = empty;
     }
 
     private void validateShouldNotEmpty() {
