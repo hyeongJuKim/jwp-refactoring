@@ -30,5 +30,4 @@ public class OrderTableRequest {
         OrderTable orderTable = new OrderTable(new NumberOfGuests(numberOfGuests), empty);
         return orderTable;
     }
-
 }
